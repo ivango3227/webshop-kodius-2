@@ -56,7 +56,7 @@ function App() {
            userInfo:userInfo
          };
        });
-       axios.post("https://git.heroku.com/webshop-kodius-api.git/api/order/add",order)
+       axios.post("https://webshop-zadatak-ig.herokuapp.com/api/order/add",order)
        .then((res)=>console.log(res))
        .catch((err)=>console.log(err));
        setCartItems([]);
