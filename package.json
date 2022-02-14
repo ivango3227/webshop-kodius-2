@@ -8,8 +8,8 @@
         "install-client": "cd webshop && npm install",
         "heroku-postbuild": "npm run install-webshop && npm run build",
         "server": "nodemon app.js",
-        "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix webshop\"",
-        "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix webshop\""
+        "develop": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix webshop\"",
+        "start": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix webshop\""
   },
   "author": "",
   "license": "ISC",
