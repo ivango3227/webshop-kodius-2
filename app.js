@@ -14,9 +14,9 @@ const  DB ="ordersDB";
 
 //Middleware
 app.use(express.json());
-app.use(express.static(path.resolve(__dirname,"./webshop/build")));
+app.use(express.static(path.resolve(__dirname,"./client/build")));
 app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "./webshop/build", "index.html"));
+  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });
 app.set('view engine', 'ejs');
 
@@ -55,9 +55,7 @@ let OrderSchema= new mongoose.Schema(
 
 let Order=new mongoose.model("Order",OrderSchema);
 
-app.get("/",function(req,res){
-  res.send("Welcome to webshop-kodius!");
-})
+
  //Route to register an order
  app.post("/api/order/add",function(req,res){
    let order = new Order(req.body);
