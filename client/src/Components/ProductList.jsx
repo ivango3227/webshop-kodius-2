@@ -13,6 +13,7 @@ function ProductList(props) {
             <div className="products-list">
                 {products.map(product =>
                     <Product
+                        key={product.key}
                         handleAddProduct={props.handleAddProduct}
                         product={product}
                     />

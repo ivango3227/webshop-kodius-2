@@ -198,35 +198,48 @@ input::-webkit-inner-spin-button {
     border:1px solid #ddd; 
 }
 .total-price-div{
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color:#1A5F7A;
 }
+
 .total-price-div button{
-    width:100%;
+    width:200px;
     height: 45px;
     border-radius:10px;
     background-color:#1A5F7A;
     margin-bottom: 0;
     border:none;
     color:#fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
+
+.total-price-div input{
+    text-indent: 10px;
+    width:200px;
+    height:45px;
+    border-radius: 10px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    margin-bottom:15px;
+}
+
 .data-container {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
-
-.data-container > form {
-    height: 700px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.25rem;
-    padding: 0.25rem;
+.form-div {
+    display:flex;
+    flex-wrap: wrap;
    
 }
+
 .data-container h1 , .succes-page h1{
     margin-top: 40px;
     text-align: center;
@@ -242,6 +255,10 @@ input::-webkit-inner-spin-button {
     margin-bottom: 0;
     border:none;
     color:#fff;
+}
+.credit-card-info{
+    width:50%;
+
 }
 
 

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, NavLink, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route,  Routes } from "react-router-dom";
 import React, { useState } from "react";
 import Header from "./Header";
 import ProductList from "./ProductList";
@@ -15,6 +15,7 @@ function App() {
     totalPrice:0,
     userInfo:{}
   });
+ 
   
   
   function handleAddProduct(product) {

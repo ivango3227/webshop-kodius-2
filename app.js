@@ -47,7 +47,11 @@ let OrderSchema= new mongoose.Schema(
         lname:String,
         streetName:String,
         streetNumber:String,
-        email:String
+        email:String,
+        phone:String,
+        creditCardNumber:Number,
+        creditCardCCV:Number,
+        creditCardValidTrou:String
     }
   }
 )
