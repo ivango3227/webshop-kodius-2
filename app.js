@@ -8,7 +8,7 @@ const path = require("path");
 //require("./routes/quoteRoute.js")(app);
 
 const PORT=process.env.PORT || 9000;
-const DB_URI ="mongodb+srv://admin-ivan:test123@cluster0.2p3sj.mongodb.net/";
+const DB_URI ="MY_DB_URI";
 const  DB ="ordersDB";
 
 
